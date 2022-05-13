@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "total": 40000,
+    "date": "12-01-2021",
+    "listSelectedItems": [
+      {
+        "id": 1,
+        "id_product": 1,
+        "type": "FOOD",
+        "name": "Sandwich",
+        "quantity": 1,
+        "price": 20000,
+        "amount": 20000
+      },
+      {
+        "id": 2,
+        "id_product": 1,
+        "type": "DRINK",
+        "name": "Coca",
+        "quantity": 1,
+        "price": 20000,
+        "amount": 20000
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "total": 40000,
+    "date": "13-01-2022",
+    "listSelectedItems": [
+      {
+        "id": 1,
+        "id_product": 1,
+        "type": "FOOD",
+        "name": "Sandwich",
+        "quantity": 1,
+        "price": 20000,
+        "amount": 20000
+      },
+      {
+        "id": 2,
+        "id_product": 3,
+        "type": "DRINK",
+        "name": "Fanta",
+        "quantity": 1,
+        "price": 20000,
+        "amount": 20000
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "total": 120000,
+    "date": "13-01-2022",
+    "listSelectedItems": [
+      {
+        "id": 1,
+        "id_product": 5,
+        "type": "FOOD",
+        "name": "Soup",
+        "quantity": 1,
+        "price": 100000,
+        "amount": 100000
+      },
+      {
+        "id": 2,
+        "id_product": 3,
+        "type": "DRINK",
+        "name": "Fanta",
+        "quantity": 1,
+        "price": 20000,
+        "amount": 20000
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "total": 1100000,
+    "date": "13-01-2022",
+    "listSelectedItems": [
+      {
+        "id": 1,
+        "id_product": 6,
+        "type": "FOOD",
+        "name": "Sea Food",
+        "quantity": 1,
+        "price": 1000000,
+        "amount": 1000000
+      },
+      {
+        "id": 2,
+        "id_product": 7,
+        "type": "DRINK",
+        "name": "Vodka",
+        "quantity": 1,
+        "price": 100000,
+        "amount": 100000
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "total": 500000,
+    "date": "13-01-2022",
+    "listSelectedItems": [
+      {
+        "id": 1,
+        "id_product": 8,
+        "type": "FOOD",
+        "name": "Buffet",
+        "quantity": 1,
+        "price": 300000,
+        "amount": 300000
+      },
+      {
+        "id": 2,
+        "id_product": 8,
+        "type": "DRINK",
+        "name": "Whisky",
+        "quantity": 1,
+        "price": 200000,
+        "amount": 200000
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "total": 1700000,
+    "date": "20-01-2022",
+    "listSelectedItems": [
+      {
+        "id": 1,
+        "id_product": 8,
+        "type": "FOOD",
+        "name": "Buffet",
+        "quantity": 5,
+        "price": 300000,
+        "amount": 1500000
+      },
+      {
+        "id": 2,
+        "id_product": 7,
+        "type": "DRINK",
+        "name": "Vodka",
+        "quantity": 2,
+        "price": 100000,
+        "amount": 200000
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "total": 1650000,
+    "date": "20-01-2022",
+    "listSelectedItems": [
+      {
+        "id": 1,
+        "id_product": 8,
+        "type": "FOOD",
+        "name": "Buffet",
+        "quantity": 5,
+        "price": 300000,
+        "amount": 1500000
+      },
+      {
+        "id": 2,
+        "id_product": 5,
+        "type": "DRINK",
+        "name": "Tiger",
+        "quantity": 5,
+        "price": 30000,
+        "amount": 150000
+      }
+    ]
+  }
+]

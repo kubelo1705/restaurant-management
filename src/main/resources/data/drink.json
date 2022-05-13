@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Pepsi",
+    "description": "SoftDrink",
+    "price": 20000,
+    "type": "NON_ALCOHOLIC"
+  },
+  {
+    "id": 2,
+    "name": "Fanta",
+    "description": "SoftDrink",
+    "price": 20000,
+    "type": "NON_ALCOHOLIC"
+  },
+  {
+    "id": 3,
+    "name": "Tiger",
+    "description": "Beer",
+    "price": 30000,
+    "type": "ALCOHOLIC"
+  },
+  {
+    "id": 4,
+    "name": "Budweiser",
+    "description": "Beer",
+    "price": 30000,
+    "type": "ALCOHOLIC"
+  },
+  {
+    "id": 5,
+    "name": "Vodka",
+    "description": "Wine",
+    "price": 100000,
+    "type": "ALCOHOLIC"
+  },
+  {
+    "id": 6,
+    "name": "Coca",
+    "description": "SoftDrink",
+    "price": 20000,
+    "type": "ALCOHOLIC"
+  },
+  {
+    "id": 7,
+    "name": "Aquafina",
+    "description": "Water",
+    "price": 10000,
+    "type": "NON_ALCOHOLIC"
+  }
+]

@@ -1,0 +1,315 @@
+[ {
+  "id" : 1,
+  "total" : 40000,
+  "date" : "12-01-2021",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Sandwich",
+    "quantity" : 1,
+    "price" : 20000,
+    "amount" : 20000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Coca",
+    "quantity" : 1,
+    "price" : 20000,
+    "amount" : 20000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 2,
+  "total" : 40000,
+  "date" : "13-01-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Sandwich",
+    "quantity" : 1,
+    "price" : 20000,
+    "amount" : 20000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Fanta",
+    "quantity" : 1,
+    "price" : 20000,
+    "amount" : 20000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 3,
+  "total" : 120000,
+  "date" : "13-01-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Soup",
+    "quantity" : 1,
+    "price" : 100000,
+    "amount" : 100000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Fanta",
+    "quantity" : 1,
+    "price" : 20000,
+    "amount" : 20000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 4,
+  "total" : 1100000,
+  "date" : "13-01-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Sea Food",
+    "quantity" : 1,
+    "price" : 1000000,
+    "amount" : 1000000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Vodka",
+    "quantity" : 1,
+    "price" : 100000,
+    "amount" : 100000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 5,
+  "total" : 500000,
+  "date" : "13-01-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Buffet",
+    "quantity" : 1,
+    "price" : 300000,
+    "amount" : 300000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Whisky",
+    "quantity" : 1,
+    "price" : 200000,
+    "amount" : 200000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 6,
+  "total" : 1700000,
+  "date" : "20-01-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Buffet",
+    "quantity" : 5,
+    "price" : 300000,
+    "amount" : 1500000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Vodka",
+    "quantity" : 2,
+    "price" : 100000,
+    "amount" : 200000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 7,
+  "total" : 1650000,
+  "date" : "20-01-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Buffet",
+    "quantity" : 5,
+    "price" : 300000,
+    "amount" : 1500000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Tiger",
+    "quantity" : 5,
+    "price" : 30000,
+    "amount" : 150000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 8,
+  "total" : 120000,
+  "date" : "28-01-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Hamburger",
+    "quantity" : 2,
+    "price" : 50000,
+    "amount" : 100000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Aquafina",
+    "quantity" : 2,
+    "price" : 10000,
+    "amount" : 20000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 9,
+  "total" : 100000,
+  "date" : "14-02-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Migoi",
+    "quantity" : 0,
+    "price" : 10000,
+    "amount" : 0
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Vodka",
+    "quantity" : 1,
+    "price" : 100000,
+    "amount" : 100000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 10,
+  "total" : 370000,
+  "date" : "15-02-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Fried Rice",
+    "quantity" : 5,
+    "price" : 50000,
+    "amount" : 250000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Budweiser",
+    "quantity" : 4,
+    "price" : 30000,
+    "amount" : 120000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 11,
+  "total" : 210000,
+  "date" : "15-02-2022",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Hamburger",
+    "quantity" : 3,
+    "price" : 50000,
+    "amount" : 150000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Pepsi",
+    "quantity" : 3,
+    "price" : 20000,
+    "amount" : 60000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 12,
+  "total" : 700000,
+  "date" : "18-02-2022 11:26:52",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Hamburger",
+    "quantity" : 10,
+    "price" : 50000,
+    "amount" : 500000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Pepsi",
+    "quantity" : 10,
+    "price" : 20000,
+    "amount" : 200000
+  } ],
+  "status" : "PAID"
+}, {
+  "id" : 13,
+  "total" : 1040000,
+  "date" : "18-02-2022 12:28:02",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Buffet",
+    "quantity" : 2,
+    "price" : 500000,
+    "amount" : 1000000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Pepsi",
+    "quantity" : 2,
+    "price" : 20000,
+    "amount" : 40000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 14,
+  "total" : 4400000,
+  "date" : "18-02-2022 12:41:30",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Sea Food",
+    "quantity" : 4,
+    "price" : 1000000,
+    "amount" : 4000000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Vodka",
+    "quantity" : 4,
+    "price" : 100000,
+    "amount" : 400000
+  } ],
+  "status" : "UNPAID"
+}, {
+  "id" : 15,
+  "total" : 1390000,
+  "date" : "18-02-2022 12:28:02",
+  "listSelectedItems" : [ {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Buffet",
+    "quantity" : 2,
+    "price" : 500000,
+    "amount" : 1000000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Pepsi",
+    "quantity" : 2,
+    "price" : 20000,
+    "amount" : 40000
+  }, {
+    "id" : 1,
+    "type" : "FOOD",
+    "name" : "Hamburger",
+    "quantity" : 5,
+    "price" : 50000,
+    "amount" : 250000
+  }, {
+    "id" : 2,
+    "type" : "DRINK",
+    "name" : "Pepsi",
+    "quantity" : 5,
+    "price" : 20000,
+    "amount" : 100000
+  } ],
+  "status" : "UNPAID"
+} ]

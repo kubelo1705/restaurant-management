@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Sandwich",
+    "description": "1 person",
+    "price": 20000,
+    "type": "BREAKFAST"
+  },
+  {
+    "id": 2,
+    "name": "Noodles",
+    "description": "1 person",
+    "price": 20000,
+    "type": "BREAKFAST"
+  },
+  {
+    "id": 3,
+    "name": "Fried Rice",
+    "description": "1 person",
+    "price": 50000,
+    "type": "BREAKFAST"
+  },
+  {
+    "id": 4,
+    "name": "Beefsteak",
+    "description": "1 person",
+    "price": 100000,
+    "type": "LUNCH"
+  },
+  {
+    "id": 5,
+    "name": "Soup",
+    "description": "2 person",
+    "price": 100000,
+    "type": "LUNCH"
+  },
+  {
+    "id": 6,
+    "name": "Sea Food",
+    "description": "5 person",
+    "price": 1000000,
+    "type": "DINNER"
+  },
+  {
+    "id": 7,
+    "name": "BBQ ",
+    "description": "5 person",
+    "price": 1500000,
+    "type": "DINNER"
+  },
+  {
+    "id": 8,
+    "name": "Buffet",
+    "description": "1 person",
+    "price": 300000,
+    "type": "DINNER"
+  }
+]

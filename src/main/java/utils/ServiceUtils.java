@@ -23,9 +23,7 @@ public class ServiceUtils {
     }
 
     public static <T> boolean checkIdInList(List<T> list, int id) {
-        if (id > 0 && id <= list.size())
-            return true;
-        return false;
+        return id > 0 && id <= list.size();
     }
 
 }

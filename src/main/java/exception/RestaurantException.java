@@ -1,7 +1,7 @@
 package exception;
 
 public class RestaurantException extends Exception {
-    private String message;
+    private final String message;
 
     public RestaurantException(String message) {
         this.message = message;

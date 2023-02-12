@@ -21,7 +21,7 @@ import java.util.List;
  */
 public class BillServiceImp implements BillService {
     private static final Logger LOGGER = LogManager.getLogger(BillServiceImp.class);
-    private static MenuService menuService = new MenuServiceImp();
+    private static final MenuService menuService = new MenuServiceImp();
 
     @Override
     public List<Bill> getAllBills() {
@@ -30,7 +30,7 @@ public class BillServiceImp implements BillService {
 
     @Override
     public void saveBill(Bill bill) throws IOException {
-        List<Bill> bills=getAllBills();
+        List<Bill> bills = getAllBills();
         bills.add(bill);
         LOGGER.debug("{[]}", "SAVE BILL TO FILE");
         JsonHandler.saveListToFile(bills);
@@ -39,16 +39,17 @@ public class BillServiceImp implements BillService {
 
     /**
      * Delete bill and update new id in bill list
+     *
      * @param id
      * @throws RestaurantException
      */
     @Override
     public void deleteBill(int id) throws IOException {
-        List<Bill> bills=getAllBills();
+        List<Bill> bills = getAllBills();
         bills.remove(id - 1);
         LOGGER.debug("{[]}", "DELETE SUCCESSFULLY");
         ServiceUtils.updateIdBill(bills);
-        JsonHandler.saveListToFile(getAllBills());
+        JsonHandler.saveListToFile(bills);
         LOGGER.debug("{[]}", "SAVE BILL LIST TO FILE");
     }
 
@@ -73,46 +74,47 @@ public class BillServiceImp implements BillService {
 
     @Override
     public boolean checkIdBill(int id) throws IndexOutOfBoundsException {
-        List<Bill> bills=getAllBills();
+        List<Bill> bills = getAllBills();
         return ServiceUtils.checkIdInList(bills, id);
     }
 
     @Override
-    public boolean checkUnpaidBill(int id){
-        return (getAllBills().stream().filter(bill -> bill.getId()==id).findFirst().orElse(null).getStatus()==BillStatus.UNPAID?true:false)&&checkIdBill(id);
+    public boolean checkUnpaidBill(int id) {
+        return (getAllBills().stream().filter(bill -> bill.getId() == id).findFirst().orElse(null).getStatus() == BillStatus.UNPAID) && checkIdBill(id);
     }
+
     @Override
-    public int getTotalBillById(int id) throws Exception{
-        Bill bill=getBillById(id);
-        if(bill!=null){
+    public int getTotalBillById(int id) throws Exception {
+        Bill bill = getBillById(id);
+        if (bill != null) {
             return bill.getTotal();
-        }else{
+        } else {
             throw new RestaurantException(Message.ERROR_NON_EXIST_VALUE);
         }
     }
 
     @Override
-    public Bill getBillById(int id){
-        try{
-            List<Bill> bills=getAllBills();
-            if (ServiceUtils.checkIdInList(bills,id)){
-                return bills.stream().filter(bill -> bill.getId()==id).findFirst().orElse(null);
-            }else{
+    public Bill getBillById(int id) {
+        try {
+            List<Bill> bills = getAllBills();
+            if (ServiceUtils.checkIdInList(bills, id)) {
+                return bills.stream().filter(bill -> bill.getId() == id).findFirst().orElse(null);
+            } else {
                 return null;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             return null;
         }
     }
 
     @Override
     public void changeBillStatus(int id) throws Exception {
-        List<Bill> bills=getAllBills();
-        Bill billChange=bills.stream().filter(bill -> bill.getId()==id).findFirst().orElse(null);
-        if(billChange!=null){
+        List<Bill> bills = getAllBills();
+        Bill billChange = bills.stream().filter(bill -> bill.getId() == id).findFirst().orElse(null);
+        if (billChange != null) {
             billChange.setStatus(BillStatus.PAID);
             JsonHandler.saveListToFile(bills);
-        }else{
+        } else {
             throw new RestaurantException(Message.ERROR_NON_EXIST_VALUE);
         }
     }

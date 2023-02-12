@@ -522,8 +522,8 @@ public class RestaurantView {
         if (billList.size() == 0) {
             System.out.println("EMPTY");
         } else {
-            System.out.printf(FormatOutput.FORMAT_BILL, "id", "total", "date","status");
-            billList.forEach((bill) -> System.out.printf(FormatOutput.FORMAT_BILL, bill.getId(), bill.getTotal(), bill.getDate(),bill.getStatus()));
+            System.out.printf(FormatOutput.FORMAT_BILL, "id", "total", "date", "status");
+            billList.forEach((bill) -> System.out.printf(FormatOutput.FORMAT_BILL, bill.getId(), bill.getTotal(), bill.getDate(), bill.getStatus()));
         }
     }
 
@@ -556,65 +556,66 @@ public class RestaurantView {
     /**
      * Show total and input money
      */
-    public void payBill(){
+    public void payBill() {
         int id;
         int total;
-        int inputMoney=0;
-        int changeMoney=-1;
-        try{
+        int inputMoney = 0;
+        int changeMoney = -1;
+        try {
             System.out.println("Input id bill to pay:");
-            id=Integer.parseInt(scanner.nextLine());
-            total=billController.getTotalBill(id);
+            id = Integer.parseInt(scanner.nextLine());
+            total = billController.getTotalBill(id);
             try {
                 while (changeMoney < 0) {
                     System.out.println("Input money:");
                     int input = Integer.parseInt(scanner.nextLine());
-                    if(input==Options.EXIT)
+                    if (input == Options.EXIT)
                         break;
-                    if(input>0){
-                        inputMoney+=input;
-                        changeMoney= billController.payBill(total,inputMoney);
-                        if(changeMoney<0){
+                    if (input > 0) {
+                        inputMoney += input;
+                        changeMoney = billController.payBill(total, inputMoney);
+                        if (changeMoney < 0) {
                             System.out.println("Not enough money. Please add money. ");
-                        }else{
-                            if(changeMoney==0){
+                        } else {
+                            if (changeMoney == 0) {
                                 System.out.println("Thanks you");
-                            }else{
-                                System.out.println("Change money: "+changeMoney);
+                            } else {
+                                System.out.println("Change money: " + changeMoney);
                             }
                             billController.changeBillStatus(id);
-                            LOGGER.debug("[{}]","PAID BILL ID=",id);
+                            LOGGER.debug("[{}]", "PAID BILL ID=", id);
                         }
-                    }else {
+                    } else {
                         System.out.println(Message.ERROR_INVALID_VALUE);
                     }
                 }
-            }catch(Exception e){
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
-                LOGGER.error("[{}]",e);
+                LOGGER.error("[{}]", e);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
-            LOGGER.error("[{}]",e);
+            LOGGER.error("[{}]", e);
         }
     }
 
-    public void addItemToBill(){
+    public void addItemToBill() {
         int id;
         System.out.println("Input id bill:");
-        try{
-            id=Integer.parseInt(scanner.nextLine());
-            if(billController.checkUnpaidBill(id)){
-                Bill bill=billController.getBillById(id);
+        try {
+            id = Integer.parseInt(scanner.nextLine());
+            if (billController.checkUnpaidBill(id)) {
+                Bill bill = billController.getBillById(id);
                 selectBillItem(bill);
-            }else {
+            } else {
                 System.out.println(Message.ERROR_INVALID_VALUE);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
             LOGGER.error(e);
         }
     }
+
     /**
      * Display main options to choose
      */

@@ -60,6 +60,7 @@ public class BillController {
 
     /**
      * Delete bill by id
+     *
      * @param id
      */
     public void deleteBill(int id) throws Exception {
@@ -74,10 +75,11 @@ public class BillController {
 
     /**
      * Create new bill with identify id
+     *
      * @return
      */
     public Bill createBill() {
-        int id = billService.getAllBills().size()+ 1;
+        int id = billService.getAllBills().size() + 1;
         LOGGER.debug("[{}]", "CREATE EMPTY BILL ID=" + id);
         return new Bill(id);
     }
@@ -93,9 +95,9 @@ public class BillController {
      * Pay bill by position
      */
     public int getTotalBill(int id) throws Exception {
-        if(billService.checkIdBill(id)) {
+        if (billService.checkIdBill(id)) {
             return billService.getTotalBillById(id);
-        }else{
+        } else {
             throw new RestaurantException(Message.ERROR_NON_EXIST_VALUE);
         }
     }
@@ -103,13 +105,14 @@ public class BillController {
     /**
      * Pay bill
      */
-    public int payBill(int total,int inputMoney) throws RestaurantException {
-        if(inputMoney>=0) {
+    public int payBill(int total, int inputMoney) throws RestaurantException {
+        if (inputMoney >= 0) {
             return inputMoney - total;
-        }else{
+        } else {
             throw new RestaurantException(Message.ERROR_INVALID_VALUE);
         }
     }
+
     /**
      * Change bill status
      */
@@ -120,25 +123,25 @@ public class BillController {
     /**
      * Check id bill
      */
-    public boolean checkIdBill(int id){
+    public boolean checkIdBill(int id) {
         return billService.checkIdBill(id);
     }
 
     /**
      * Check if bill is unpaid
      */
-    public boolean checkUnpaidBill(int id){
+    public boolean checkUnpaidBill(int id) {
         return billService.checkUnpaidBill(id);
     }
 
     /**
      * Get bill by id
      */
-    public Bill getBillById(int id) throws RestaurantException{
-        Bill bill=billService.getBillById(id);
-        if(bill!=null){
+    public Bill getBillById(int id) throws RestaurantException {
+        Bill bill = billService.getBillById(id);
+        if (bill != null) {
             return bill;
-        }else {
+        } else {
             throw new RestaurantException(Message.ERROR_NON_EXIST_VALUE);
         }
     }

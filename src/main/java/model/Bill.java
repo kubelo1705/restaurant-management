@@ -19,8 +19,8 @@ public class Bill {
     public Bill(int id) {
         this.id = id;
         this.date = TimeUtils.getCurrentFormatedTime();
-        status=BillStatus.UNPAID;
-        this.total=0;
+        status = BillStatus.UNPAID;
+        this.total = 0;
     }
 
     public Bill() {

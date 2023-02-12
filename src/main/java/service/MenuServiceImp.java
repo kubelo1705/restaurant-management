@@ -36,6 +36,7 @@ public class MenuServiceImp implements MenuService {
 
     /**
      * Add new item to menu and update id in menu list
+     *
      * @param menu
      * @throws RestaurantException
      */
